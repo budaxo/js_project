@@ -8,19 +8,12 @@
     <div><h1>YouTube Sentiment Analysis App</h1></div>
     <p>Please enter an id of the YouTube video whose comments you would like to analyze.</p>
     <p>Instructions for obtaining a video id are <a href="https://docs.joeworkman.net/rapidweaver/stacks/youtube/video-id">here</a>.</p>
-      <form id="form_a" action="#">
+      <form id="form" action="#">
         Video ID:<br>
-          <input type="text" name="video_id" value="#">
+          <input type="text" name="video_id" value="">
           <br>
   <input type="button" onclick="buttonSubmit()" value="Submit">
       </form>
-
-      <script>
-      function buttonSubmit() {
-          document.getElementById("form_a").submit();
-      }
-    </script>
-
   </body>
   <script src="logic.js"></script>
 </html>

@@ -1,6 +1,8 @@
 //gather info from the form function
 
-
+function buttonSubmit() {
+    document.getElementById("form").submit();
+}
 
 //form request function
 
@@ -9,24 +11,29 @@
 //send request function
 
 
-
 //callback function
 
 
-//take the response to show he results page
+//take the response from the server to show he results page
 
 
 
-//function that resets a form after the results page
+//function that resets a form after the results page, should reset the form after button "Go" in results page is cliked.
 
-<form id="frm1" action="/action_page.php">
-  First name: <input type="text" name="fname"><br>
-  Last name: <input type="text" name="lname"><br><br>
-  <input type="button" onclick="myFunction()" value="Submit">
-</form>
-
-<script>
-function myFunction() {
-    document.getElementById("frm1").submit();
+function formReset() {
+    document.getElementById("form").submit();
 }
-</script>
+
+// function to show the result - must pull result from the backend and display it in the results page.
+
+function showResult() {
+    var avg = totalSentiment / commentCount;
+    if (avg > 0.5) { // happy
+        return "client/images/happy.png";
+    }
+    if (avg < -0.5) { // angry
+        return "client/images/angry.png";
+    }
+    // neutral
+    return "client/images/meh.png";
+}
