@@ -7,7 +7,6 @@ function buttonSubmit() {
 //form request function
 
 
-
 //send request function
 
 
@@ -15,7 +14,6 @@ function buttonSubmit() {
 
 
 //take the response from the server to show he results page
-
 
 
 //function that resets a form after the results page, should reset the form after button "Go" in results page is cliked.
